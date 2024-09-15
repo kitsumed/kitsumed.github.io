@@ -1,3 +1,8 @@
+/* Change the navbar background color */
+.navbar {
+   --bulma-navbar-background-color: hsl(221,14%,6%);
+}
+
 /* Make the footer padding smaller */
 .footer {
    --bulma-footer-padding: 3rem 1.5rem 2rem;
@@ -8,6 +13,7 @@ body {
    min-height: 100vh;
    display: flex;
    flex-direction: column;
+   background-color: #16181c;
 }
 
 /* Make the element with this class take all the available place in the body to push down the footer */
