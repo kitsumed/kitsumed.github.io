@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="theme-dark">
 
 <head>
 	<title>Projects</title>
@@ -9,12 +9,14 @@
 	<meta name="description" content="See kitsumed projects.">
 	<meta name="keywords" content="kitsumed, projects, github">
 	<link rel="stylesheet" href="./media/css/bulma.min.css">
+	<link rel="stylesheet" href="./media/css/bulmaThemes.css">
 	<link rel="stylesheet" href="./media/css/main.css">
+	<link rel="stylesheet" href="./media/css/animate.min.css">
 </head>
 
-<body>
+<body class="has-navbar-fixed-top">
 	<!-- load js scripts-->
-	<script src="./media/js/bulma.js"></script>
+	<script src="./media/js/navbar.js"></script>
 	<noscript>
 		<article class="message is-warning">
 			<div class="message-body">
@@ -23,7 +25,7 @@
 		</article>
 	</noscript>
 	<!-- Top navbar-->
-	<nav class="navbar" role="navigation" aria-label="main navigation">
+	<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
 			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
 				<span aria-hidden="true"></span>
@@ -33,6 +35,7 @@
 			</a>
 		</div>
 		<div id="navbarMenu" class="navbar-menu">
+			<!-- Left navbar-->
 			<div class="navbar-start container is-max-desktop">
 				<a href="/" class="navbar-item mr-5">
 					<span class="icon">
@@ -56,16 +59,40 @@
 					<span>Projects</span>
 				</a>
 			</div>
+			<!-- Right navbar-->
+			<div class="navbar-start">
+				<button class="navbar-item button is-text animate__animated animate__faster animate__flipInX"
+					onclick="InvertTheme(this)">
+					<!-- Light theme svg -->
+					<svg id="svgLightTheme" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+						viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+						<path
+							d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+					</svg>
+					<!-- Dark theme svg -->
+					<svg id="svgDarkTheme" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+						fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+						<path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
+						<path d="M19 11h2m-1 -1v2" />
+					</svg>
+				</button>
+			</div>
 		</div>
 	</nav>
 	<!-- Main Container -->
 	<section class="section mainContainer">
 		<div class="columns is-mobile">
 			<div class="column">
-				<div class="column is-offset-1">
+				<div class="column is-offset-1 animate__animated animate__fadeIn">
 					<h1 class="title">Projects</h1>
 					<p class="is-size-5">
-						There's nothing here yet, but can see my projects <a
+						There's nothing here yet, but you can see my projects <a
 							href="https://github.com/kitsumed?tab=repositories" target="_blank">here</a>!
 					</p>
 				</div>

@@ -1,0 +1,43 @@
+/* Overwrite bulma general theme, dark, & light theme */
+
+/* GENERAL THEME */
+.footer {
+    /* Make the footer padding smaller */
+    --bulma-footer-padding: 3rem 1.5rem 2rem;
+} 
+
+ 
+/* DARK THEME */
+[data-theme=theme-dark],
+.theme-dark {
+    /* Body */
+    --bulma-body-background-color: #16181c;
+}
+
+[data-theme=theme-dark],
+html.theme-dark .navbar  {
+    --bulma-navbar-background-color: hsl(221, 14%, 6%);
+}
+
+/* LIGHT THEME */
+[data-theme=theme-light],
+.theme-light {
+    /* Body */
+    --bulma-body-background-color: hsl(221, 14%, 88%);
+}
+
+[data-theme=theme-light],
+html.theme-light .navbar  {
+    --bulma-navbar-background-color: hsl(221, 14%, 98%);
+    --bulma-navbar-item-selected-background-l: 78%;
+}
+
+[data-theme=theme-light],
+html.theme-light .footer  {
+    --bulma-footer-background-color: hsl(221, 14%, 94%);
+}
+
+[data-theme=theme-light],
+html.theme-light .card  {
+    --bulma-card-background-color: hsl(221, 14%, 92%);
+}

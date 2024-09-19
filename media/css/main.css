@@ -1,22 +1,23 @@
-/* Change the navbar background color */
-.navbar {
-   --bulma-navbar-background-color: hsl(221,14%,6%);
-}
-
-/* Make the footer padding smaller */
-.footer {
-   --bulma-footer-padding: 3rem 1.5rem 2rem;
-}
-
 /* Make the body take at least the full viewport height and uses flexbox to stack children vertically */
 body {
    min-height: 100vh;
    display: flex;
    flex-direction: column;
-   background-color: #16181c;
 }
 
 /* Make the element with this class take all the available place in the body to push down the footer */
 .mainContainer {
    flex: 1;
+}
+
+/* Hide the dark theme svg in navbar when in dark mode */
+[data-theme=theme-dark],
+.theme-dark #svgDarkTheme {
+    display: none;
+}
+
+/* Hide the light theme svg in navbar when in light mode */
+[data-theme=theme-light],
+.theme-light #svgLightTheme {
+    display: none;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="theme-dark">
 
 <head>
 	<title>About Kitsumed</title>
@@ -9,12 +9,14 @@
 	<meta name="description" content="Learn more about kitsumed.">
 	<meta name="keywords" content="kitsumed, about, github">
 	<link rel="stylesheet" href="./media/css/bulma.min.css">
+	<link rel="stylesheet" href="./media/css/bulmaThemes.css">
 	<link rel="stylesheet" href="./media/css/main.css">
+	<link rel="stylesheet" href="./media/css/animate.min.css">
 </head>
 
-<body class="theme-dark">
+<body class="has-navbar-fixed-top">
 	<!-- load js scripts-->
-	<script src="./media/js/bulma.js"></script>
+	<script src="./media/js/navbar.js"></script>
 	<noscript>
 		<article class="message is-warning">
 			<div class="message-body">
@@ -23,7 +25,7 @@
 		</article>
 	</noscript>
 	<!-- Top navbar-->
-	<nav class="navbar" role="navigation" aria-label="main navigation">
+	<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
 			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
 				<span aria-hidden="true"></span>
@@ -33,6 +35,7 @@
 			</a>
 		</div>
 		<div id="navbarMenu" class="navbar-menu">
+			<!-- Left navbar-->
 			<div class="navbar-start container is-max-desktop">
 				<a href="/" class="navbar-item mr-5 is-selected">
 					<span class="icon">
@@ -56,13 +59,33 @@
 					<span>Projects</span>
 				</a>
 			</div>
+			<!-- Right navbar-->
+			<div class="navbar-start">
+				<button class="navbar-item button is-text animate__animated animate__faster animate__flipInX" onclick="InvertTheme(this)">
+					<!-- Light theme svg -->
+					<svg id="svgLightTheme" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+						<path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+					</svg>
+					<!-- Dark theme svg -->
+					<svg id="svgDarkTheme" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+						<path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
+						<path d="M19 11h2m-1 -1v2" />
+					</svg>
+				</button>
+			</div>
 		</div>
 	</nav>
 	<!-- Main Container -->
 	<section class="section mainContainer">
 		<div class="columns is-mobile">
 			<div class="column">
-				<div class="column is-offset-1">
+				<div class="column is-offset-1 animate__animated animate__fadeIn">
 					<h1 class="title">About</h1>
 					<p class="is-size-5">
 						Hi there, I'm <strong>kitsumed</strong>. But you can call me <strong>Med</strong>! I'm a
@@ -72,8 +95,7 @@
 						inspires me to work on a project.
 					</p>
 				</div>
-				<div
-					class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-offset-1">
+				<div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-offset-1 animate__animated animate__fadeIn animate__slow">
 					<div class="card">
 						<div class="card-content">
 							<div class="media">
@@ -86,19 +108,20 @@
 								</div>
 								<div class="media-content">
 									<p class="title is-4">Med</p>
-									<a class="subtitle is-6 tag mt-2" href="https://github.com/kitsumed"
+									<a class="subtitle is-6 tag mt-2 animate__animated animate__fadeInUp" style="--animate-duration: 1.6s;" href="https://github.com/kitsumed"
 										target="_blank">@kitsumed</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="column is-offset-1 mt-6">
+				<div class="column is-offset-1 mt-6 animate__animated animate__fadeIn animate__slower">
 					<h1 class="title">Some technologies I've explored</h1>
 					<h4 class="subtitle is-5 mt-2">Languages :</h4>
 					<div class="columns is-multiline is-mobile is-0 mt-2">
 						<div class="column is-narrow mr-2">
-							<a href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/overview" class="button is-text" target="_blank" rel="noreferrer">
+							<a href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/overview"
+								class="button is-text" target="_blank" rel="noreferrer">
 								<figure class="image is-48x48">
 									<img src="./media/pictures/icons/languages/csharp.svg" alt="csharp" />
 								</figure>
