@@ -19,6 +19,16 @@ html.theme-dark .navbar  {
     --bulma-navbar-background-color: hsl(221, 14%, 6%);
 }
 
+[data-theme=theme-dark],
+html.theme-dark .box  {
+    --bulma-box-background-color: hsl(221,16%,12%);
+}
+
+[data-theme=theme-dark],
+html.theme-dark .card  {
+    --bulma-card-shadow: 0 0.5em 1em -0.125em hsla(0deg,0%,60%,0.1),0 0px 0 1px hsla(0deg,0%,60%,0.02);
+}
+
 /* LIGHT THEME */
 [data-theme=theme-light],
 .theme-light {

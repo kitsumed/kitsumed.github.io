@@ -10,6 +10,10 @@ body {
    flex: 1;
 }
 
+.no-text-decoration {
+    text-decoration: none !important;
+}
+
 /* Hide the dark theme svg in navbar when in dark mode */
 [data-theme=theme-dark],
 .theme-dark #svgDarkTheme {
@@ -20,4 +24,16 @@ body {
 [data-theme=theme-light],
 .theme-light #svgLightTheme {
     display: none;
+}
+
+/* Custom and additional bulma style css */
+
+/* [FullHeight Cards & Footer fix] */
+.card.is-fullheight {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.card.is-fullheight .card-footer {
+    margin-top: auto;
 }
