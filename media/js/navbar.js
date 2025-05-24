@@ -16,6 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
             $target.classList.toggle('is-active');
         });
     });
+
+    // Verify the saved theme in local storage (assuming user is comming back from the blog website)
+    const userTheme = localStorage.getItem('pref-theme');
+    // By default theme is dark, if it is defined and is light, we change it
+    if (userTheme && userTheme == "light") {
+        const themeButton = document.getElementById("change-theme-button");
+        InvertTheme(themeButton);
+    }
 });
 
 /**
@@ -28,6 +36,8 @@ function InvertTheme(buttonElement) {
         // Since we only have 2 them, and default to dark, toggle should be enought to switch between the two.
         document.documentElement.classList.toggle("theme-dark");
         document.documentElement.classList.toggle("theme-light");
+        // Switch the theme storage, this key is used by the /blog website and when first loading this page
+        localStorage.setItem('pref-theme', document.documentElement.classList.contains("theme-dark") ? "dark": "light");
 
         buttonElement.classList.remove("animate__flipOutX");
         buttonElement.classList.add("animate__flipInX");

@@ -5,15 +5,19 @@
 	<title>About Kitsumed</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
 	<meta name="author" content="kitsumed">
-	<meta name="description" content="Hi, I'm Med (kitsumed), a Canadian developer exploring new technologies. Check out my projects, learn about my journey, and discover the tools & languages I worked with.">
-	<meta name="keywords" content="kitsumed, about, github, technologies, developer, projects, tools, languages, open source">
+	<meta name="description"
+		content="Hi, I'm Med (kitsumed), a Canadian developer exploring new technologies. Check out my projects, learn about my journey, and discover the tools & languages I worked with.">
+	<meta name="keywords"
+		content="kitsumed, about, github, technologies, developer, projects, tools, languages, open source">
 	<link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/45147847?s=192">
 	<!-- Open Graph -->
-	<meta property="og:type" content="website"/>
-	<meta property="og:title" content="About Kitsumed"/>
-	<meta property="og:url" content="https://kitsumed.github.io/"/>
-	<meta property="og:description" content="Hi, I'm Med (kitsumed), a Canadian developer exploring new technologies. Check out my projects, learn about my journey, and discover the tools & languages I worked with."/>
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="About Kitsumed" />
+	<meta property="og:url" content="https://kitsumed.github.io/" />
+	<meta property="og:description"
+		content="Hi, I'm Med (kitsumed), a Canadian developer exploring new technologies. Check out my projects, learn about my journey, and discover the tools & languages I worked with." />
 
 	<link rel="stylesheet" href="./media/css/bulma.min.css">
 	<link rel="stylesheet" href="./media/css/bulmaThemes.css">
@@ -46,8 +50,8 @@
 			<div class="navbar-start container is-max-desktop">
 				<a href="/" class="navbar-item mr-5 is-selected">
 					<span class="icon">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-							stroke="currentColor" class="size-6">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+							stroke-width="1.5" stroke="currentColor" class="size-6">
 							<path stroke-linecap="round" stroke-linejoin="round"
 								d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
 						</svg>
@@ -57,28 +61,42 @@
 
 				<a href="/projects" class="navbar-item mr-5">
 					<span class="icon">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-							stroke="currentColor" class="size-6">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+							stroke-width="1.5" stroke="currentColor" class="size-6">
 							<path stroke-linecap="round" stroke-linejoin="round"
 								d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" />
 						</svg>
 					</span>
 					<span>Projects</span>
 				</a>
+
+				<a href="/blog/" class="navbar-item mr-5">
+					<span class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke-width="2"
+							stroke="currentColor" viewBox="0 0 122.88 119.19">
+							<path
+								d="M104.84,1.62,121.25,18a5.58,5.58,0,0,1,0,7.88L112.17,35l-24.3-24.3L97,1.62a5.6,5.6,0,0,1,7.88,0ZM31.26,3.43h36.3L51.12,19.87H31.26A14.75,14.75,0,0,0,20.8,24.2l0,0a14.75,14.75,0,0,0-4.33,10.46v68.07H84.5A14.78,14.78,0,0,0,95,98.43l0,0a14.78,14.78,0,0,0,4.33-10.47V75.29l16.44-16.44V87.93A31.22,31.22,0,0,1,106.59,110l0,.05a31.2,31.2,0,0,1-22,9.15h-72a12.5,12.5,0,0,1-8.83-3.67l0,0A12.51,12.51,0,0,1,0,106.65v-72a31.15,31.15,0,0,1,9.18-22l.05-.05a31.17,31.17,0,0,1,22-9.16ZM72.33,74.8,52.6,80.9c-13.85,3-13.73,6.15-11.16-6.91l6.64-23.44h0l0,0L83.27,15.31l24.3,24.3L72.35,74.83l0,0ZM52.22,54.7l16,16-13,4c-10.15,3.13-10.1,5.22-7.34-4.55l4.34-15.4Z" />
+						</svg></span>
+					<span>Blog</span>
+				</a>
 			</div>
 			<!-- Right navbar-->
 			<div class="navbar-start">
-				<button class="navbar-item button is-text animate__animated animate__faster animate__flipInX" onclick="InvertTheme(this)" aria-label="Change Theme">
+				<button class="navbar-item button is-text animate__animated animate__faster animate__flipInX"
+					id="change-theme-button" onclick="InvertTheme(this)" aria-label="Change Theme">
 					<!-- Light theme svg -->
-					<svg id="svgLightTheme" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<svg id="svgLightTheme" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+						viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round">
 						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 						<path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-						<path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+						<path
+							d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
 					</svg>
 					<!-- Dark theme svg -->
-					<svg id="svgDarkTheme" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<svg id="svgDarkTheme" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+						fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round">
 						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 						<path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
 						<path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
@@ -102,7 +120,8 @@
 						inspires me to work on a project.
 					</p>
 				</div>
-				<div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-offset-1 animate__animated animate__fadeIn animate__slow">
+				<div
+					class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-offset-1 animate__animated animate__fadeIn animate__slow">
 					<div class="card">
 						<div class="card-content">
 							<div class="media">
@@ -115,7 +134,8 @@
 								</div>
 								<div class="media-content">
 									<p class="title is-4">Med</p>
-									<a class="subtitle is-6 tag mt-2 animate__animated animate__fadeInUp" style="--animate-duration: 1.6s;" href="https://github.com/kitsumed"
+									<a class="subtitle is-6 tag mt-2 animate__animated animate__fadeInUp"
+										style="--animate-duration: 1.6s;" href="https://github.com/kitsumed"
 										target="_blank" rel="noopener">@kitsumed</a>
 								</div>
 							</div>
@@ -135,7 +155,8 @@
 							</a>
 						</div>
 						<div class="column is-narrow mr-2">
-							<a href="https://luau-lang.org/" class="button is-text" target="_blank" rel="noopener" rel="noreferrer">
+							<a href="https://luau-lang.org/" class="button is-text" target="_blank" rel="noopener"
+								rel="noreferrer">
 								<figure class="image is-48x48">
 									<img src="./media/pictures/icons/languages/luau.svg" alt="luau" />
 								</figure>
@@ -150,7 +171,8 @@
 							</a>
 						</div>
 						<div class="column is-narrow mr-2">
-							<a href="https://www.w3.org/html/" class="button is-text" target="_blank" rel="noopener" rel="noreferrer">
+							<a href="https://www.w3.org/html/" class="button is-text" target="_blank" rel="noopener"
+								rel="noreferrer">
 								<figure class="image is-48x48">
 									<img src="./media/pictures/icons/languages/html5.svg" alt="html5" />
 								</figure>
@@ -165,7 +187,8 @@
 							</a>
 						</div>
 						<div class="column is-narrow mr-2">
-							<a href="https://www.python.org/" class="button is-text" target="_blank" rel="noopener" rel="noreferrer">
+							<a href="https://www.python.org/" class="button is-text" target="_blank" rel="noopener"
+								rel="noreferrer">
 								<figure class="image is-48x48">
 									<img src="./media/pictures/icons/languages/python.svg" alt="python" />
 								</figure>
@@ -176,14 +199,16 @@
 					<h4 class="subtitle is-5 mt-2">Databases :</h4>
 					<div class="columns is-multiline is-mobile is-0 mt-2">
 						<div class="column is-narrow mr-2">
-							<a href="https://www.mysql.com/" class="button is-text" target="_blank" rel="noopener" rel="noreferrer">
+							<a href="https://www.mysql.com/" class="button is-text" target="_blank" rel="noopener"
+								rel="noreferrer">
 								<figure class="image is-48x48">
 									<img src="./media/pictures/icons/other/mysql.svg" alt="mysql" />
 								</figure>
 							</a>
 						</div>
 						<div class="column is-narrow mr-2">
-							<a href="https://www.sqlite.org/" class="button is-text" target="_blank" rel="noopener" rel="noreferrer">
+							<a href="https://www.sqlite.org/" class="button is-text" target="_blank" rel="noopener"
+								rel="noreferrer">
 								<figure class="image is-48x48">
 									<img src="./media/pictures/icons/other/sqlite.svg" alt="sqlite" />
 								</figure>
@@ -220,14 +245,16 @@
 							</a>
 						</div>
 						<div class="column is-narrow mr-2">
-							<a href="https://nodejs.org" class="button is-text" target="_blank" rel="noopener" rel="noreferrer">
+							<a href="https://nodejs.org" class="button is-text" target="_blank" rel="noopener"
+								rel="noreferrer">
 								<figure class="image is-48x48">
 									<img src="./media/pictures/icons/other/nodejs.svg" alt="nodejs" />
 								</figure>
 							</a>
 						</div>
 						<div class="column is-narrow mr-2">
-							<a href="https://www.docker.com/" class="button is-text" target="_blank" rel="noopener" rel="noreferrer">
+							<a href="https://www.docker.com/" class="button is-text" target="_blank" rel="noopener"
+								rel="noreferrer">
 								<figure class="image is-48x48">
 									<img src="./media/pictures/icons/other/docker.svg" alt="docker" />
 								</figure>
@@ -256,8 +283,8 @@
 			<p>
 				Made by <strong><a href="https://github.com/kitsumed">kitsumed</a></strong>.
 				The source code is licensed under <a
-					href="https://raw.githubusercontent.com/kitsumed/kitsumed.github.io/main/LICENSE"
-					target="_blank" rel="noopener">MIT</a>.
+					href="https://raw.githubusercontent.com/kitsumed/kitsumed.github.io/main/LICENSE" target="_blank"
+					rel="noopener">MIT</a>.
 			</p>
 		</div>
 	</footer>
