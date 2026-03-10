@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://kitsumed.github.io/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://kitsumed.github.io/blog/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kitsumed.github.io/projects</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <sitemap>
+        <loc>https://kitsumed.github.io/sitemap-urlset.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://kitsumed.github.io/blog/sitemap.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://kitsumed.github.io/OngakuVault/sitemap.xml</loc>
+    </sitemap>
+</sitemapindex>
